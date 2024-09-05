@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  transition: all 0.3s;
+}
+html{
+  height: 100%!important;
+}
+body{
+  height: 100%;
+  position: relative;
+}
+h1{
+  color: #fff;
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 800;
+}
+h2{
+  font-size: 64px;
+  line-height: 68px;
+  padding: 30px 0 25px;
+  
+}
+h3{
+  font-size: 20px;
+  line-height: 24px;
+  padding: 25px 0 20px;
+ 
+}
+h4{
+  color: #919191;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+h2,h3,h4{
+   font-weight: 700;
+}
+
+p{
+  color: #a5a7ab;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 25px 0;
+}
+nav{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 55px 0;
+}
+
+
+nav.sticky{
+  padding: 18px 0;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+nav .logo{
+  display: inline-block;
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 0px 6px;
+  padding: 7px 11px;
+  border-radius: 15px;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #0da5db;
+  background-color:#f0f1f4;
+  border-radius: 10px;
+}
+nav a.active{
+  color: #0da5db;
+  background: #f0f1f4;
+  border-radius: 10px;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.main{
+  background: url("../img/bg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: table;
+  padding: 175px 0;
+}
+.inner{
+  vertical-align: middle;
+  display: table-cell;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.vr{
+  width: 380px;
+  height: 428px;
+  margin-right: -12px;
+}
+.del{
+  width: 380px;
+  height: 490px;
+  box-shadow: -1px 0px 3px 0px rgb(185, 186, 177);
+}
+.vr,.del{
+  background-color: #fff;
+  border-radius: 5px;
+}
+.brd{
+  background-color: #000;
+  width: 35%;
+  height: 1px;
+  margin: auto;
+}
+.del h2{
+   color: #1abc9c;
+}
+.vr p,.del p{
+  color: #555;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.vr .doller{
+  color: #000;
+  margin-right: 10px;
+}
+sup{
+  font-size: 32px;
+}
+span{
+  color:  #a5a7ab;
+  font-weight: 700;
+}
+.fst{
+  border-bottom: 1px solid #bfc1c438;
+}
+.vr a,.del a{
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 18px 42px;
+  display: inline-block;
+}
+.vr a{
+  background-color: #000;
+}
+.del a{
+  background: linear-gradient(180deg, rgba(92,173,227,1) 41%, rgba(171,124,254,1) 97%);
+}
+.del a:hover,.vr a:hover,.vr a:focus,
+.del a:focus{
+  background: linear-gradient(0deg, rgba(92,173,227,1) 41%, rgba(171,124,254,1) 97%);
+  transition: all 0.5s;
+}
+footer{
+  background-color: #02b3a4;
+  padding: 90px 0 75px;
+}
+footer p{
+  color: #90ded7;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 24px;
+}
+footer a{
+  display: inline-block;
+}
+
+
+
+@media (max-width: 767px){
+
+nav{
+  padding: 0;
+}
+    nav ul li a{
+    font-size: 16px;
+  }
+    .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+nav.sticky {
+  padding:  0;
+}
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 46px;
+  padding: 15px 0 12px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 25px 0 12px;
+}
+h4 {
+  font-size: 15px;
+  line-height: 19px;
+}
+p {
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+sup {
+  font-size: 22px;
+}
+.wrapper {
+  flex-direction: column-reverse;
+}
+.vr p, .del p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.del{
+  width:265px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.vr a, .del a {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 30px;
+}
+.vr {
+  width: 266px;
+  height: 322px;
+  margin-right: 0;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+nav{
+  padding: 0;
+}
+    nav ul li a{
+    font-size: 16px;
+  }
+    .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+nav.sticky {
+  padding:  0;
+}
+h1 {
+  font-size: 35px;
+  line-height: 39px;
+  }
+h2 {
+  font-size: 40px;
+  line-height: 46px;
+  padding: 15px 0 12px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 25px 0 12px;
+}
+h4 {
+  font-size: 15px;
+  line-height: 19px;
+}
+p {
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+sup {
+  font-size: 22px;
+}
+.vr p, .del p {
+  font-size: 14px;
+  line-height: 18px;
+}
+.del{
+  width:265px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.vr a, .del a {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 30px;
+}
+.vr {
+  width: 266px;
+  height: 322px;
+  margin-right: 0;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+nav ul li a {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0px 1px;
+  padding: 7px 11px;
+}
+h1 {
+  font-size: 42px;
+  line-height: 46px;
+}
+p {
+  font-size: 19px;
+  line-height: 23px;
+}
+
+
+
+}
