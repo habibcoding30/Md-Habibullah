@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ceek</title>
+	<link rel="stylesheet" href="css/package.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+
+  <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo"><img src="img/logo.png"></a>
+      <ul class="nav-links">   
+        <li><a href="index.html">MEGADETH IN VR</a></li>
+        <li><a href="index.html">VR CARDBOX</a></li>
+        <li><a href="#download">DOWNLOAD & ACCESS</a></li>
+        <li><a href="index.html">INSTRUCTIONS</a></li>
+        <li><a class="active" href="#">BUY NOW</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+    	<div class="inner">
+    		<h1>CHOOSE YOUR PACKAGE</h1>
+    		<p>Start with just the headset or go all out for the most immersive Megadeth experience.</p>
+
+    		<div class="wrapper">
+    			<div class="vr">
+    				<div class="fst">
+    				<h3>VR HEADSET ONLY</h3>
+    				</div>
+
+    				<h2><span class="doller"><sup>$</sup></span>14<sup>.99</sup></h2>
+
+    				<div class="brd"></div>
+    				<p><span>INCLUDES:</span><br>Megadeth VR Headset</p>
+    				<a href="#">CHOOSE PACKAGE</a>
+    			</div>
+    			<div class="del">
+    				<div class="fst">
+    				<h3>DELUXE EXPERIENCE</h3>
+    				<h4>MOST POPULAR</h4>
+    				</div>
+    				<h2><sup>$</sup>24<sup>.99</sup></h2>
+    				<div class="brd"></div>
+    				<p><span>INCLUDES:</span><br>Megadeth VR Headset<br>Megadeth Dystopia CD<br>CEEK App Access Code</p>
+    				<a href="#">CHOOSE PACKAGE</a>
+    		</div>
+    	</div>
+    </div>
+</div>
+
+<footer>
+	<a href="#"><img src="img/logo.png"></a>
+	<p>CEEK VR INC - &#169; 2016</p>
+</footer>
+
+
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+</body>
+</html>

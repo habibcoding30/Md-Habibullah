@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CEEK</title>
+		<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/order.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+	<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo"><img src="img/logo.png"></a>
+      <ul> 
+        <li><a href="#">VR CARDBOX</a></li>
+        <li><a href="#">MEGADETH IN VR</a></li>
+        <li><a href="#">DOWNLOAD & ACCESS</a></li>
+        <li><a href="#">INSTRUCTIONS</a></li>
+        <li><a class="active" href="#">BUY NOW</a></li>
+      </ul>
+    </nav>
+
+
+
+<div class="main">
+	
+	<div class="inner">
+		<h1>ORDER CONFIRMED</h1>
+		<p>Get started with CEEK right away by creating an account. You can connect with<br>your facebook credentials or create one with your email.</p>
+
+		<a href="#" class="btn" alt="Connect to Facebook" ><img src="img/facebook.png"></a>
+
+
+
+			
+		<div class="ctn1">
+		<p>Or <a href="#">sign up</a> with your email</p>
+		</div>
+
+		<div class="brd">
+		</div>
+
+		<div class="ctn2">
+		<p>Already have an account? <a href="#">Log In</a></p>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<a href="#"><img src="img/logo.png"></a>
+	<p>CEEK VR INC - &#169;2016</p>
+</footer>
+
+
+<script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+
+</body>
+</html>
+
+
+

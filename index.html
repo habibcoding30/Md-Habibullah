@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ceek | Home</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<!-- start nab bar -->
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo"><img src="img/logo.png"></a>
+      <ul class="nav-links"> 
+        <li><a href="index.html">MEGADETH IN VR</a></li>
+        <li><a href="#vr">VR CARDBOX</a></li>
+        <li><a href="#download">DOWNLOAD & ACCESS</a></li>
+        <li><a href="#instructor">INSTRUCTIONS</a></li>
+        <li><a class="active" href="package.html">BUY NOW</a></li>
+      </ul>
+    </nav>
+
+<!-- end nav bar -->
+<!-- start sec-1 -->
+
+<div class="main" >
+	<div class="inner">
+		<h1>MEGADETH DYSTOPIA <br>VR EXPERIENCE</h1>
+		<p><b>BE THERE</b> Live with the legends for this first of its kind VR Experience! Join MEGADETH for a 5 Song VR Concert in<br>360 degrees with 3D immersive audio. Plus a bonus track featuring a full immersive 360 experience!</p>
+
+		<div class="twin">
+			<a href="#">LEARN MORE</a>	<br><br>	
+			<a href="package.html" class="btn">BUY NOW</a>	
+		</div>
+
+		<p>Already Have Your Megadeth VR Cardbox? <a href="#" target="_blank" class="a">Download The App</a></p>
+	</div>
+</div>
+
+<!-- End sec-1 -->
+<!-- start sec-2 -->
+
+<div class="sec-2" id="vr">
+	<h2 >Megadeth VR Cardbox for<br>Virtual Reality Experiences</h2>
+	<div class="wapper">
+		<div class="card1">
+			<img src="img/sec-img1.png">
+		</div>
+		<div class="card2">
+			<img src="img/sec-img2.png">
+		</div>
+		<div class="card3">
+			<img src="img/sec-img3.png">
+		</div>
+		<div class="card4">
+			<img src="img/sec-img4.png">
+		</div>
+	</div>
+	<p>The Megadeth VR Cardbox <b>Deluxe Pack</b> has everything needed to transform your Apple or Android smart<br>phone screen into a super immersive Mega VR experience including<i> lenses, magnets and more!</i></p>
+	
+	<div class="twin">
+		<a href="#" class="btn">BUY NOW</a>
+	</div>
+	<div class="ot">	
+		<p><b>$24.99</b> for the Deluxe Pack<br>Includes: CD, VR 
+		Headset + Code to Access the Experience on CEEK.</p>
+	</div>
+</div>
+
+<!-- end sec-2 -->
+<!-- start sec-3 -->
+
+<div class="sec-3" id="instructor">
+
+	<h2>EXPERIENCE MEGADETH <br>IN CUTTING EDGE VR, ON CEEK!</h2>
+
+	<p>Iconic thrash rock band Megadeth comes to CEEK with a VR experience of five songs from Dystopia, “Fatal<br>Illusion,” “Dystopia,” The Threat Is Real,” “Poisonous Shadows,” and “Post American World.”
+	</p>
+
+		<video controls height="420" width="720">
+	<source src="video/video.mp4" type="video/mp4">
+	</video>
+
+	<div class="p">
+		<p>The band’s performance will appear within the fallen city of a dystopian world modeled after<br>the world created in Megadeth’s new music video for “The Threat Is Real.” The 360 experience<br>will be composited into CEEK’s CG VR environment to create a dystopian universe surrounding<br>the band, and allow fans to virtually enter, engage and explore this parallel world.</p>
+	</div>
+
+</div>
+<!-- end sec-3 -->
+<!-- start sec-4 -->
+<div class="sec-4" id="download">
+
+	<h2>DOWNLOAD & ACCESS</h2>
+	<p>Once you have your cardbox, accessing the Megadeth experience is easy! Just<br>follow the simple instructions below. Don’t have a cardbox yet?<a href="#" class="a"> Buy It Here</a>.</p>
+
+	<div class="show"></div>
+
+	<p><b>STEP 1.</b> Download the CEEK app for iOS or Android.</p>
+	<div class="site">
+		<div class="ap-st">
+			<a href="#"><img src="img/apple-store.png"></a>
+		</div>
+		<div>
+			<a href="#"><img src="img/play-store.png"></a>
+		</div>
+	</div>
+
+	<div class="show"></div>
+
+	<p><b>STEP 2.</b> Find the access code located under your cardbox.<br>Then launch the app, enter the code and enjoy!</p>
+
+	<div class="blank"></div>
+
+</div>
+
+<!-- end sec-4 -->
+<!-- start sec-5 -->
+<div class="sec-5">
+	<h2>cardbox assembly<br>instructions</h2>
+	<p>Assembling your cardbox is easy. Watch the video below for instructions.</p>
+
+	<video controls height="420" width="720">
+	<source src="video/video.mp4" type="video/mp4">
+	</video>
+</div>
+
+<!-- end sec-5 -->
+
+<footer>
+	<a href="#"><img src="img/logo.png"></a>
+	<p>CEEK VR INC - &#169;2016</p>
+</footer>
+
+
+<script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+
+</body>
+</html>
